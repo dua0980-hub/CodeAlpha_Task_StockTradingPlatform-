@@ -44,56 +44,56 @@ StockTradingPlatform/
     └── mysql-connector-java-5.1.49.jar # Required Communication Database Driver
 ```
 
----
+✨ Features
 
-## ⚙️ Quick Installation Setup Guide
+- 🌙 Modern Dark Theme User Interface
+- 📊 Interactive GUI using Java Swing
+- 💹 Buy and Sell Stocks
+- 💼 Portfolio Management
+- 💰 Account Balance Tracking
+- ⚡ Real-time Transaction Updates
+- 🖱️ User-Friendly Navigation
+- 🛡️ Input Validation and Error Handling
 
-### 1. Initialize the SQLyog Database Schema
-Connect to your local MySQL instance using your client manager and execute this blueprint schema initialization script:
+🛠️ Technologies Used
 
-```sql
-CREATE DATABASE IF NOT EXISTS trading_platform;
-USE trading_platform;
+- Java
+- Java Swing
+- Object-Oriented Programming (OOP)
+- Event-Driven Programming
 
-CREATE TABLE IF NOT EXISTS user_balance (
-    id INT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL,
-    balance DOUBLE NOT NULL
-);
-INSERT IGNORE INTO user_balance (id, username, balance) VALUES (1, 'DefaultUser', 10000.0);
+📂 Project Structure
 
-CREATE TABLE IF NOT EXISTS portfolio (
-    symbol VARCHAR(10) PRIMARY KEY,
-    shares INT DEFAULT 0
-);
+StockTradingPlatform/
+│── src/
+│── assets/
+│── README.md
 
-CREATE TABLE IF NOT EXISTS transactions (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    type VARCHAR(10) NOT NULL,
-    symbol VARCHAR(10) NOT NULL,
-    shares INT NOT NULL,
-    price DOUBLE NOT NULL,
-    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+🚀 Getting Started
 
-CREATE TABLE IF NOT EXISTS portfolio_history (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    total_value DOUBLE NOT NULL,
-    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
+1. Clone the repository.
+2. Open the project in your preferred Java IDE (IntelliJ IDEA, Eclipse, or NetBeans).
+3. Build and run the project.
+4. Start exploring the Stock Trading Platform.
 
-### 2. Configure Local Connection Credentials
-Open `DatabaseHelper.java` inside your NetBeans project and map your local system password properties:
-```java
-private static final String URL = "jdbc:mysql://localhost:3306/trading_platform?useSSL=false";
-private static final String USER = "root";       
-private static final String PASSWORD = "dua123"; 
-```
+🎯 Learning Outcomes
 
-### 3. Build & Deploy Inside NetBeans
-1. Clone or copy these source repositories into a clean NetBeans workspace.
-2. Right-click your project root **Libraries** folder tree icon -> **Add JAR/Folder**.
-3. Select your local path directory pointing directly to `mysql-connector-java-5.1.49.jar`.
-4. Right-click on **`MainFrame.java`** and click **Run File** (`Shift + F6`) to deploy the live application window instance.
+This project enhanced my understanding of:
 
+- Java GUI Development
+- Object-Oriented Programming
+- Event Handling
+- Data Management
+- Desktop Application Development
+
+👩‍💻 Author
+
+Dua Burfat 
+IT Student At University Of Sindh
+
+Java Developer 
+
+📄 License
+
+This project is developed for educational and learning purposes.
+LinkedIn :https://www.linkedin.com/in/dua-burfat-769578390/⁠
