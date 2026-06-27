@@ -1,4 +1,4 @@
-# 📈 QUANTUM | Modern Real-Time Stock Trading Terminal
+# Modern Real-Time Stock Trading Platform
 
 ![Java](https://shields.io)
 ![MySQL](https://shields.io)
